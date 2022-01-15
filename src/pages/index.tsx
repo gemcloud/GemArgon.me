@@ -14,6 +14,11 @@ import Experience from '@/containers/Experience'
 import Feedbacks from '@/containers/Feedbacks'
 import Projects from '@/containers/Projects'
 
+// import ContactUs from '@/components/Base/ContactUsForm'
+import ContactUs from '@/components/Reusable/ContactForm/ContactMe'
+
+import MessageForm from '@/components/Base/MessageForm'
+
 // import { openSource } from '@/../_CmsData/MyPortfolio'
 
 export default function Home() {
@@ -24,6 +29,8 @@ export default function Home() {
 					<title>🎯 Portfolio Boilerplate</title>
 				</Head>
 				<Greetings />
+				<ContactUs />
+				<MessageForm />
 				<Skills />
 				<Proficiency />
 				<Education />

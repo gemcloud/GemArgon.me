@@ -5,7 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import { SeoMeta } from '@/components/Seo/SeoMeta'
 import { Header } from '@/components/Header/Header'
 
-import Footer from '@/components/Footers/BaseFooter'
+import Footer from '@/components/Footers/SimpleFooter'
 
 export const GlobalStyle = createGlobalStyle`
     // this is the shared style

@@ -43,9 +43,11 @@ const NavigationArgon = () => {
 						<div className='navbar-collapse-header'>
 							<div className='row'>
 								<div className='collapse-brand col-6'>
-									<h3 className='text-black' id='nav-title'>
-										{greetings.name}
-									</h3>
+									<a href='/' className='mr-lg-5 navbar-brand'>
+										<h3 className='text-black' id='nav-title'>
+											{greetings.name}
+										</h3>
+									</a>
 								</div>
 								<div className='collapse-close col-6'>
 									<button

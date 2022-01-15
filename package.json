@@ -1,6 +1,6 @@
 {
 	"name": "gemargon.me",
-	"private": true,
+	"private": false,
 	"scripts": {
 		"dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3002",
 		"build": "next build",

@@ -1,7 +1,7 @@
 // Implement ContactUs to use www.emailjs.com
 import React from 'react'
 // import { ChangeEvent, SyntheticEvent, useState } from 'react'
-import styles from '../styles/Contact.module.css'
+import styles from '@/styles/Contact.module.scss'
 // import axios from 'axios'
 
 export default function ContactUs() {
