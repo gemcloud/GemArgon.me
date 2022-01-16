@@ -62,8 +62,7 @@ export default function ContactUs() {
 								></textarea>
 							</div>
 							<div
-								className={`${styles.form_group}
-                ${styles.submit_button_div}`}
+								className={`${styles.form_group} ${styles.submit_button_div}`}
 							>
 								<button className={styles.submit_button}>Send</button>
 							</div>

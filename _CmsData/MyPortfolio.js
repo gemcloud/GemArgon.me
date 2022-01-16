@@ -5,7 +5,10 @@ export const greetings = {
 	title: "Hi all, I'm Argon",
 	description:
 		'A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Nextjs React / Nodejs / C# / SQL and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.',
-	resumeLink: 'https://cv.pdf.gemcloud',
+	cellphone: '6041234567',
+	email: 'gemcloud85@gmail.com',
+	// or download a pdf from website : resumeLink: 'https://cv.pdf.gemcloud',
+	resumeLink: '/myCV',
 }
 
 export const openSource = {

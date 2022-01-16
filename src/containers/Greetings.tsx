@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Link from 'next/link'
 import { greetings } from '@/../_CmsData/MyPortfolio'
 import { IlottieData } from '@/types/interfaces/IlottieData'
 import { PlayLottie } from '@/components/Base/PlayLottie'
@@ -40,16 +41,18 @@ const Greetings = () => {
 									<p className='lead text-white'>{greetings.description}</p>
 									<SocialLinks />
 									<div className='btn-wrapper my-4'>
-										<a
-											className='btn btn-white btn-icon mb-3 mb-sm-0 ml-1'
-											color='default'
-											href={greetings.resumeLink}
-										>
-											<span className='btn-inner--icon mr-1'>
-												<i className='fa fa-file' />
-											</span>
-											<span className='btn-inner--text'>See My Resume</span>
-										</a>
+										<Link href={greetings.resumeLink}>
+											<a
+												className='btn btn-white btn-icon mb-3 mb-sm-0 ml-1'
+												color='default'
+												// href={greetings.resumeLink}
+											>
+												<span className='btn-inner--icon mr-1'>
+													<i className='fa fa-file' />
+												</span>
+												<span className='btn-inner--text'>See My Resume</span>
+											</a>
+										</Link>
 									</div>
 								</div>
 								<div className='col-lg-6'>

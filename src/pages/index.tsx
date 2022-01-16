@@ -13,13 +13,9 @@ import Education from '@/containers/Education'
 import Experience from '@/containers/Experience'
 import Feedbacks from '@/containers/Feedbacks'
 import Projects from '@/containers/Projects'
+import ContactMe from '@/containers/ContactMe'
 
-// import ContactUs from '@/components/Base/ContactUsForm'
-import ContactUs from '@/components/Reusable/ContactForm/ContactMe'
-
-import MessageForm from '@/components/Base/MessageForm'
-
-// import { openSource } from '@/../_CmsData/MyPortfolio'
+import { openSource } from '@/../_CmsData/MyPortfolio'
 
 export default function Home() {
 	return (
@@ -29,17 +25,14 @@ export default function Home() {
 					<title>🎯 Portfolio Boilerplate</title>
 				</Head>
 				<Greetings />
-				<ContactUs />
-				<MessageForm />
+				<ContactMe />
 				<Skills />
 				<Proficiency />
 				<Education />
 				<Experience />
 				<Feedbacks />
 				<Projects />
-				{/*
-		<ContactUs sent email />
-        <GithubProfileCard prof={githubProfileData} /> */}
+				{/* <GithubProfileCard prof={githubProfileData} /> */}
 			</Layout>
 		</>
 	)
@@ -49,12 +42,12 @@ export default function Home() {
 // 	githubProfileData: PropTypes.object.isRequired,
 // }
 
-// export async function getStaticProps() {
-// 	const githubProfileData = await fetch(
-// 		`https://api.github.com/users/${openSource.githubUserName}`
-// 	).then(res => res.json())
+export async function getStaticProps() {
+	const githubProfileData = await fetch(
+		`https://api.github.com/users/${openSource.githubUserName}`
+	).then(res => res.json())
 
-// 	return {
-// 		props: { githubProfileData },
-// 	}
-// }
+	return {
+		props: { githubProfileData },
+	}
+}

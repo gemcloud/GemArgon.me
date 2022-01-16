@@ -124,3 +124,9 @@ From your command line, clone and run GemHanBoilerplate.me ( developer-portfolio
 #Start's development server
 > yarn dev
 ```
+
+### Check in GitHub
+
+```
+>npm run format
+```

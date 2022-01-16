@@ -11,7 +11,8 @@ export default function ContactMe() {
 	return (
 		<div className={myStyles.page}>
 			<div
-				className={`${myStyles.container} ${myStyles['contact-page']}`}
+				// className={`${myStyles.container} ${myStyles['contact-page']}`}
+				className='container py-lg-md d-flex'
 				style={{ opacity: 1, transform: `scale(1)` }}
 			>
 				<div className={myStyles['page-bg']}>Contact</div>
@@ -29,8 +30,7 @@ export default function ContactMe() {
 								<span style={{ overflowWrap: `break-word` }}>
 									If you are interested in working with me or have any
 									questions, don&#39;t hesitate to get in touch with me at{' '}
-									<strong place='email'>gemcloud85@gmail.com</strong> or use the
-									contact form.
+									<strong>gemcloud85@gmail.com</strong> or use the contact form.
 								</span>
 							</div>
 						</section>
