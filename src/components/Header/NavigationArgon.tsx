@@ -43,7 +43,15 @@ const NavigationArgon = () => {
 						<div className='navbar-collapse-header'>
 							<div className='row'>
 								<div className='collapse-brand col-6'>
-									<a href='#' className='mr-lg-5 navbar-brand'>
+									<a
+										href='#'
+										className='mr-lg-5 navbar-brand'
+										onClick={() =>
+											setMobileMenuOpen(
+												mobileMenuOpen ? !mobileMenuOpen : false
+											)
+										}
+									>
 										<h3 className='text-black' id='nav-title'>
 											{greetings.name}
 										</h3>
