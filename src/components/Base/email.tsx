@@ -1,11 +1,15 @@
 import React from 'react'
 import { FaEnvelope } from 'react-icons/fa'
 
-export default function Email() {
+type Props = {
+	email: string
+}
+
+export default function Email(propsParam: Props) {
 	return (
-		<a href='mailto:gemcloud85@gmail.com' className='d-flex items-center m-2'>
+		<a href={`mailto: ${propsParam.email}`} className='d-flex items-center m-2'>
 			<FaEnvelope />
-			<p className='ml-2 mb-2'>Email: gemcloud85@gmail.com</p>
+			<p className='ml-2 mb-2'>Email: {propsParam.email}</p>
 		</a>
 	)
 }

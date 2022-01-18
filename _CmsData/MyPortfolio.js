@@ -5,8 +5,9 @@ export const greetings = {
 	title: "Hi all, I'm Argon",
 	description:
 		'A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Nextjs React / Nodejs / C# / SQL and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.',
-	cellphone: '6041234567',
+	cellphone: '18884722222',
 	email: 'gemcloud85@gmail.com',
+	address: '453 W 12th Ave, Vancouver, BC Canada V5Y 1V4.',
 	// or download a pdf from website : resumeLink: 'https://cv.pdf.gemcloud',
 	resumeLink: '/myCV',
 }
