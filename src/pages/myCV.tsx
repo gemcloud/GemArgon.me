@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import Head from 'next/head'
-// import Image from 'next/image'
+
+import Image from 'next/image'
+import me from '../../public/img/me_argon.webp'
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // // import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 // // import { faStar as faStarFull } from '@fortawesome/free-solid-svg-icons'
 // // import TimelineItem from '../components/TimelineItem' me_argon.webp
-// import me from '../../public/img/me.jpeg'
-// import me from '../../public/img/me_argon.webp'
 
 const myCV = () => {
 	const age = 0
@@ -15,17 +16,17 @@ const myCV = () => {
 	// 	(new Date() - new Date('1991-07-11').getTime()) / 3.15576e10
 	// )
 	const technologies = [
-		{ name: 'React', numberOfStars: 4 },
-		{ name: 'Vue.js', numberOfStars: 2 },
-		{ name: 'Angular', numberOfStars: 2 },
-		{ name: 'Gatsby.js', numberOfStars: 3 },
+		{ name: 'C#', numberOfStars: 4 },
+		{ name: 'SQL', numberOfStars: 2 },
+		{ name: '.Net Core', numberOfStars: 2 },
+		{ name: '', numberOfStars: 3 },
 		{ name: 'Next.js', numberOfStars: 4 },
-		{ name: 'React Native', numberOfStars: 3 },
-		{ name: 'Swift', numberOfStars: 2 },
-		{ name: 'Wordpress', numberOfStars: 3 },
+		{ name: 'React', numberOfStars: 3 },
+		{ name: '', numberOfStars: 2 },
+		{ name: '', numberOfStars: 3 },
 		{ name: 'ES6', numberOfStars: 4 },
 		{ name: 'HTML', numberOfStars: 5 },
-		{ name: 'CSS', numberOfStars: 4 },
+		{ name: 'CSS2', numberOfStars: 4 },
 	]
 	// const renderStars = ''
 	// const renderStars = (amount: number) =>
@@ -57,13 +58,17 @@ const myCV = () => {
 				<div className='container py-12 mx-auto grid grid-cols-1 sm:grid-cols-3 sm:gap-16'>
 					<div className='col-span-1 mx-6 sm:mx-0'>
 						<div className='text-center'>
-							{/* <Image
+							<Image
 								className='rounded-full'
 								priority
 								alt='Profile picture'
 								src={me}
-								placeholder='blur'
-							/> */}
+								width={400}
+								height={400}
+								// layout='fill'
+								// blurDataURL={me}
+								// placeholder='blur'
+							/>
 							<p>Hello, is it me you&apos;re looking for?</p>
 						</div>
 					</div>

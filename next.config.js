@@ -2,6 +2,7 @@
 
 const withPlugins = require('next-compose-plugins')
 const optimizedImages = require('next-optimized-images')
+// const withImages = require('next-images')
 
 const {
 	EMAIL_JS_SERVICE,
@@ -24,6 +25,16 @@ const env = {
 	GTAG,
 }
 
+// module.exports = withImages({
+// 	reactStrictMode: true,
+// 	env,
+// 	basePath,
+// 	assetPrefix,
+// 	images: {
+// 		disableStaticImages: true,
+// 	},
+// })
+
 module.exports = withPlugins([
 	[
 		optimizedImages,
@@ -38,10 +49,14 @@ module.exports = withPlugins([
 			},
 		},
 	],
+
 	{
 		reactStrictMode: true,
 		env,
 		basePath,
 		assetPrefix,
+		images: {
+			disableStaticImages: true,
+		},
 	},
 ])
